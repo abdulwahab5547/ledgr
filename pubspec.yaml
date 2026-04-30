@@ -1,0 +1,61 @@
+name: ledgr
+description: Ledgr — The Financial Integrity Engine. A local-first command center for true liquidity.
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+  flutter: ">=3.22.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management
+  flutter_riverpod: ^2.5.1
+
+  # Local persistence (encrypted)
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # Security
+  flutter_secure_storage: ^9.2.2
+  local_auth: ^2.3.0
+  cryptography: ^2.7.0
+
+  # Navigation
+  go_router: ^14.2.7
+
+  # Formatting
+  intl: ^0.19.0
+
+  # Typography (loads Instrument Serif, Inter Tight, JetBrains Mono at runtime)
+  google_fonts: ^6.2.1
+
+  # Utilities
+  collection: ^1.18.0
+  uuid: ^4.4.2
+
+  # Charts (used in Module 5)
+  fl_chart: ^0.68.0
+
+  # PDF export (used in Module 5)
+  pdf: ^3.11.1
+  printing: ^5.13.2
+
+  # Auth + cloud sync (Module 6)
+  firebase_core: ^3.6.0
+  firebase_auth: ^5.3.1
+  cloud_firestore: ^5.4.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+  # Codegen (optional; project ships hand-written Hive adapters so build_runner is not required)
+  build_runner: ^2.4.13
+  hive_generator: ^2.0.1
+
+flutter:
+  uses-material-design: true
