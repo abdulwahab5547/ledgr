@@ -33,8 +33,6 @@ coverage/
 
 # Platform folders are regenerated via `flutter create .`
 ios/
-android/
 macos/
 linux/
 windows/
-web/
